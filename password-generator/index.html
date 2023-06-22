@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password maker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+  </head>
+  
+  <body>
+    <main>
+      <div class="pwMaker">
+        <p class="pwBox">
+          <input type="text" readonly class="pwField" placeholder="Password" />
+        </p>
+
+        <ul class="settings">
+          <li>
+            <span>Password Length</span>
+            <span class="pwLengthDisplay">8</span>
+          </li>
+          <li>
+            <input
+              type="range"
+              min="8"
+              max="32"
+              value="8"
+              class="pwLength slider"
+            />
+          </li>
+          <li>
+            <span>Include Numbers</span>
+            <input type="checkbox" class="numbers" checked />
+          </li>
+          <li>
+            <span>Include Lowercase Letters</span>
+            <input type="checkbox" class="lowercase" checked />
+          </li>
+          <li>
+            <span>Include Uppercase Letters</span>
+            <input type="checkbox" class="uppercase" checked />
+          </li>
+          <li>
+            <span>Include Special Characters</span>
+            <input type="checkbox" class="specialChars" checked />
+          </li>
+        </ul>
+        <button class="pwButton">Generate Password</button>
+      </div>
+    </main>
+  </body>
+</html>
